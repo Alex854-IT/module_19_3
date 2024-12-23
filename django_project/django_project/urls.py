@@ -16,7 +16,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
 from task1.views import *
 
 #urlpatterns = [
@@ -34,5 +33,6 @@ urlpatterns = [
     path('', sign_up_by_html),
     path('django_sign_up/', sign_up_by_django),
     path('admin/', admin.site.urls),
+    path('platform/news/', news),
 ]
 #  python manage.py runserver
